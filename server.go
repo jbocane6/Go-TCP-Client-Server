@@ -28,7 +28,7 @@ func handleClient(c net.Conn) {
 		fmt.Println(err)
 		return
 	} else {
-		fmt.Println("Message: ", b[:bs])
+		fmt.Println("Message: ", string(b[:bs]))
 		fmt.Println("Bytes: ", bs)
 	}
 
